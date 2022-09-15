@@ -6,7 +6,7 @@ namespace MauiAndroidDll.Proxy
     {
         public async Task<int> AddAsync(int a, int b)
         {
-            var serviceClient = new CalculatorSoapClient(CalculatorSoapClient.EndpointConfiguration.CalculatorSoap);
+            var serviceClient = new CalculatorSoapClient(CalculatorSoapClient.EndpointConfiguration.CalculatorSoap12);
             var result = await serviceClient.AddAsync(a, b);
 
             return result;
